@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+<link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div id="root">
+    <div class="container">
+      <div class="productListContainer">
+        <h2 class="heading">Desserts</h2>
+        <div class="productsContainer">
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-waffle-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-waffle-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-waffle-mobile.jpg">
+                <img src="/assets/images/image-waffle-thumbnail.jpg" class="productImage">
+              </picture>
+            </div>
+
+
+
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+
+                  </path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Waffle</p>
+              <p class="productName">Waffle with Berries</p>
+              <p class="productPrice">$6.5</p>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-creme-brulee-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-creme-brulee-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-creme-brulee-mobile.jpg">
+                <img src="/assets/images/image-creme-brulee-thumbnail.jpg"  class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+
+                  </path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Crème Brûlée</p>
+              <p class="productName">Vanilla Bean Crème Brûlée</p>
+              <p class="productPrice">$7</p>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-macaron-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-macaron-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-macaron-mobile.jpg">
+                <img src="/assets/images/image-macaron-thumbnail.jpg" class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Macaron</p>
+              <p class="productName">Macaron Mix of Five</p>
+              <p class="productPrice">$8</p>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-tiramisu-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-tiramisu-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-tiramisu-mobile.jpg">
+                <img src="/assets/images/image-tiramisu-thumbnail.jpg" class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z">
+                  </path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+
+                  </path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Tiramisu</p>
+              <p class="productName">Classic Tiramisu</p>
+              <p class="productPrice">$5.5</p>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-baklava-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-baklava-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-baklava-mobile.jpg">
+                <img src="/assets/images/image-baklava-thumbnail.jpg" class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Baklava</p>
+              <p class="productName">Pistachio Baklava</p>
+              <p class="productPrice">$4</p>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-meringue-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-meringue-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-meringue-mobile.jpg">
+                <img src="/assets/images/image-meringue-thumbnail.jpg"class="productImage" >
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Pie</p>
+              <p class="productName">Lemon Meringue Pie</p>
+              <p class="productPrice">$5</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-cake-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-cake-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-cake-mobile.jpg">
+                <img src="/assets/images/image-cake-thumbnail.jpg"class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+
+                  </path>
+                </svg>
+                <span>Add to Cart</span>
+              </div>
+              <p class="productCategory">Cake</p>
+              <p class="productName">Red Velvet Cake</p>
+              <p class="productPrice">$4.5</p>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-brownie-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-brownie-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-brownie-mobile.jpg">
+                <img src="/assets/images/image-brownie-thumbnail.jpg"class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z">
+
+                  </path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z">
+
+                  </path>
+                </svg>
+                <span>Add to Cart</span>
+              </div><p class="productCategory">Brownie</p>
+              <p class="productName">Salted Caramel Brownie</p>
+              <p class="productPrice">$4.5</p>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="productItemContainer">
+            <div class="imageContainer">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="/assets/images/image-panna-cotta-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="/assets/images/image-panna-cotta-tablet.jpg">
+                <source media="(max-width: 767px)" srcset="/assets/images/image-panna-cotta-mobile.jpg">
+                <img src="/assets/images/image-panna-cotta-thumbnail.jpg" class="productImage">
+              </picture>
+            </div>
+            <div class="productDetails">
+              <div class="addCartButton">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0zm18.31 6-2.76 5z"></path>
+                  <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+                </svg>
+                <span>Add to Cart</span>
+              </div><p class="productCategory">Panna Cotta</p>
+              <p class="productName">Vanilla Panna Cotta</p>
+              <p class="productPrice">$6.5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="cartContainer">
+        <h4 class="heading">Your Cart (0)</h4>
+        <div class="emptyCartContainer">
+          <img src="/assets/images/illustration-empty-cart.svg" alt="empty cart" loading="lazy">
+          <p class="emptyCartQuote">Your added items will appear here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
